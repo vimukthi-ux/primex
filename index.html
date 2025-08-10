@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Screen - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>Prime Screen</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="series.html">TV Series</a></li>
+        </ul>
+    </div>
+
+    <!-- Search -->
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Search...">
+    </div>
+
+    <!-- Cards -->
+    <div class="card-grid">
+        <div class="card" onclick="window.location='movies.html'">
+            <a href="inception.html">
+            <img src="images/inception.jpg" alt="Inception"></a>
+            <div class="card-title">Inception</div>
+        </div>
+        <div class="card" onclick="window.location='movies.html'">
+            <img src="images/avengers.jpg" alt="Avengers">
+            <div class="card-title">Avengers</div>
+        </div>
+        <div class="card" onclick="window.location='series.html'">
+            <img src="images/breaking-bad.jpg" alt="Breaking Bad">
+            <div class="card-title">Breaking Bad</div>
+        </div>
+        <div class="card" onclick="window.location='series.html'">
+            <img src="images/stranger-things.jpg" alt="Stranger Things">
+            <div class="card-title">Stranger Things</div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

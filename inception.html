@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inception - Prime Screen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        /* Header */
+        header {
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        header .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #ffcc00;
+            margin-right: auto;
+        }
+        header .search-bar {
+            background-color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 8px 15px;
+            font-size: 1em;
+            width: 200px;
+        }
+        /* Container layout */
+        .container {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .poster {
+            flex: 1;
+            max-width: 300px;
+        }
+        .poster img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .details {
+            flex: 2;
+            min-width: 250px;
+        }
+        .details h2 {
+            margin-top: 0;
+            font-size: 2em;
+            color: white;
+        }
+        /* Available in buttons */
+        .available {
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .available span {
+            font-weight: bold;
+        }
+        .available a {
+            background-color: #333;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: background-color 0.2s ease;
+        }
+        .available a:hover {
+            background-color: #ffcc00;
+            color: black;
+        }
+        /* Cast */
+        .cast {
+            margin-top: 20px;
+        }
+        .cast h3 {
+            color: white;
+        }
+        .cast-list {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .cast-member {
+            text-align: center;
+            width: 100px;
+        }
+        .cast-member img {
+            width: 80px;
+            height: 80px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        /* Trailer */
+        .trailer {
+            display: flex;
+            justify-content: center;
+            margin: 30px auto;
+        }
+        .trailer iframe {
+            width: 100%;
+            max-width: 800px;
+            aspect-ratio: 16/9;
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Prime Screen</div>
+        <input type="text" class="search-bar" placeholder="Search...">
+    </header>
+
+    <div class="container">
+        <div class="poster">
+            <img src="images/inception.jpg" alt="Inception Poster">
+        </div>
+        <div class="details">
+            <h2>Inception</h2>
+            <p>A thief who enters the dreams of others to steal secrets from their subconscious must plant an idea into someone's mind, a process known as inception.</p>
+            <p><strong>Release Date:</strong> July 16, 2010</p>
+            <p><strong>Director:</strong> Christopher Nolan</p>
+            <p><strong>Genres:</strong> Action, Sci-Fi, Thriller</p>
+            <p><strong>Awards:</strong> Won 4 Oscars, 152 wins & 220 nominations total</p>
+            <p><strong>Running Time:</strong> 2h 28m</p>
+            <p><strong>IMDb:</strong> 8.8/10</p>
+
+
+<!-- Available in buttons -->
+            <div class="available">
+                <span>Available in:</span>
+                <a href="https://yts.mx/torrent/download/CE9156EB497762F8B7577B71C0647A4B0C3423E1">720p.BluRay</a>
+                <a href="https://yts.mx/torrent/download/43E3691DC6F4172841E32B25B349E2B7A980B9C5">1080p.BluRay</a>
+                <a href="https://yts.mx/torrent/download/224BF45881252643DFC2E71ABC7B2660A21C68C4">2160p.BluRay.x265</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="cast">
+        <h3>Cast</h3>
+        <div class="cast-list">
+            <div class="cast-member">
+                <img src="images/leonardo.jpg" alt="Leonardo DiCaprio">
+                <p>Leonardo DiCaprio</p>
+            </div>
+            <div class="cast-member">
+                <img src="images/joseph.jpg" alt="Joseph Gordon-Levitt">
+                <p>Joseph Gordon-Levitt</p>
+            </div>
+            <div class="cast-member">
+                <img src="images/ellen.jpg" alt="Elliot Page">
+                <p>Elliot Page</p>
+            </div>
+            <div class="cast-member">
+                <img src="images/tom.jpg" alt="Tom Hardy">
+                <p>Tom Hardy</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="trailer">
+        <iframe src="https://www.youtube.com/embed/YoHD9XEInc0" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
